@@ -1,0 +1,91 @@
+public class HomeWork {
+    //transform
+    public static void transform(int[] array){
+        for(int i = 0; i < array.length;i++){
+            array[i] *= 2;
+        }
+
+    }
+    public static void main(String[] args) {
+        int[] array = {1,2,3};
+        transform(array);
+        print(array);
+    }
+
+
+
+
+
+
+    //改变数组
+    public static void main4(String[] args) {
+        int[] array = new int[100];
+        for(int i = 1; i <= 100; i++){
+            array[i-1] = i;
+        }
+        for (int x:array
+             ) {
+            System.out.println(x);
+        }
+    }
+
+
+
+
+
+
+    //打印数组
+    public static void print(int[] array){
+        for (int x:array) {
+            System.out.println(x);
+        }
+    }
+    public static void main3(String[] args) {
+        int[] array = {1,2,3,4,5,6,7,8,9};
+        print(array);
+    }
+
+
+
+
+
+
+
+
+    //求和
+    public static int sum(int[] array){
+        int sum = 0;
+        for(int i = 0; i < array.length;i++) {
+            sum += array[i];
+        }
+        return sum;
+    }
+    public static void main2(String[] args) {
+        int[] array = {1,2,3,4,5,6,7,8,9};
+        int ret = sum(array);
+        System.out.println(ret);
+    }
+
+
+
+
+
+
+    //求平均数
+    public static double avg(int[] array){
+        double sum = 0;
+        double ave = 0;
+        for(int i = 0; i < array.length ;i++){
+            sum+=array[i];
+        }
+        ave = sum/array.length;
+        return ave;
+    }
+
+    public static void main1(String[] args) {
+        int[] array = {1,2,3,4,5,6,7,8,9};
+        double ret = avg(array);
+        System.out.println(ret);
+
+    }
+}
